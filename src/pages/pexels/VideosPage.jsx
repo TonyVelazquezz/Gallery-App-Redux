@@ -8,6 +8,8 @@ const VideosPage = () => {
 
 	//Funcion
 	const handleKeyword = ({ value }) => setVideos(value);
+
+	const KEY = import.meta.env.VITE_API_KEY;
 	const handleSearchData = async e => {
 		e.preventDefault();
 		const request = await fetch(
