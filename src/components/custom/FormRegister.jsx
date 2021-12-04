@@ -10,15 +10,15 @@ const FormRegister = ({
 	handleInputChange,
 }) => {
 	return (
-		<div className="flex items-center justify-center overflow-auto h-screen w-full ">
-			<div className="flex justify-center items-center relative md:w-2/3 w-11/12">
+		<div className="flex items-center justify-center my-2 h-full w-full ">
+			<div className="flex justify-end items-center relative sm:w-2/3 w-[95%]">
 				<img
 					src={loginForm}
 					alt="login-form-img"
-					className="absolute object-cover object-left h-full z-[-1]"
+					className="absolute object-cover h-full w-full z-[-1]"
 				/>
 
-				<div className="bg-white flex flex-wrap items-center justify-center p-3 shadow md:w-1/2 w-11/12">
+				<div className="bg-white flex flex-wrap p-3 shadow md:w-1/2 w-9/12">
 					<div className="flex flex-wrap justify-content w-full">
 						<h2 className="text-3xl text-center pb-5 w-full">Sing Up</h2>
 						<p className="font-bold pb-5 text-center mx-auto lg:w-1/2 w-full">
