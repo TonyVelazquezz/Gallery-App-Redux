@@ -8,13 +8,15 @@ const ImagesPage = () => {
 
 	//Funcion
 	const handleKeyword = ({ value }) => setImages(value);
+
+	const KEY = import.meta.env.VITE_API_KEY;
 	const handleSearchData = async e => {
 		e.preventDefault();
 		const request = await fetch(
 			`https://api.pexels.com/v1/search?query=${images}&per_page=20`,
 			{
 				headers: {
-					Authorization: '563492ad6f917000010000014a76ca74704d41e9b50df0fbdb677b24',
+					Authorization: `${KEY}`,
 				},
 			}
 		);

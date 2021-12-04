@@ -14,7 +14,7 @@ const VideosPage = () => {
 			`https://api.pexels.com/videos/search?query=${videos}&per_page=20`,
 			{
 				headers: {
-					Authorization: '563492ad6f917000010000014a76ca74704d41e9b50df0fbdb677b24',
+					Authorization: `${KEY}`,
 				},
 			}
 		);
