@@ -1,0 +1,13 @@
+body {
+	background-color: #fff;
+	font: 1.1em Arial, Helvetica, sans-serif;
+}
+.favorites-container {
+	columns: 3 260px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+.favorites-img {
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
