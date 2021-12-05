@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
-import './imageContainer.style.css';
+import './ImageContainer.style.css';
 
 //Actions
 import { handleAddFavDataAction } from '../../redux/actions/profile.action';
