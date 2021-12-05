@@ -46,7 +46,7 @@ const RegisterPage = () => {
 			<img
 				src={loginBg}
 				alt="login-bg"
-				className="absolute h-full object-cover object-center w-full z-[-1]"
+				className="absolute h-full object-cover object-center overflow-auto w-full z-[-1]"
 			/>
 
 			<FormRegister

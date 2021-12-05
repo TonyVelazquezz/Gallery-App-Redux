@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ImageContainer from '../../components/home/ImageContainer/ImageContainer';
+import ImageContainer from '../../components/ImageContainer/ImageContainer';
 
 const HomePage = () => {
 	//State
@@ -41,7 +41,7 @@ const HomePage = () => {
 		setData([...data, ...result.photos]);
 	};
 	return (
-		<div className="bg-gray-200 overflow-auto w-full">
+		<div className="pt-5 px-2 w-full">
 			<ImageContainer
 				data={data}
 				title="Home"

@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 //Styles
-import './imageContainer.styles.css';
-import SinglePhoto from '../SinglePhoto/SinglePhoto';
+import SinglePhoto from './SinglePhoto';
+import './imageContainer.style.css';
 
 //Components
 

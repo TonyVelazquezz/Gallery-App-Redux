@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FormSearch from '../../components/custom/FormSearch';
-import VideoContainer from '../../components/videos/VideoContainer/VideoContainer';
+import VideoContainer from '../../components/videos/VideoContainer';
 
 const VideosPage = () => {
 	const [videos, setVideos] = useState('');
@@ -22,10 +22,11 @@ const VideosPage = () => {
 		);
 		const result = await request.json();
 		setData(result);
+		// console.log(result);
 	};
 
 	return (
-		<div className="m-auto px-2 pb-5 sm:w-3/4 w-full">
+		<div className="px-2 pb-5 w-full">
 			<FormSearch
 				handleKeyword={handleKeyword}
 				handleSearchData={handleSearchData}

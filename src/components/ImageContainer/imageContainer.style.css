@@ -2,14 +2,19 @@ body {
 	background-color: #fff;
 	font: 1.1em Arial, Helvetica, sans-serif;
 }
-.favorites-container {
-	columns: 3 320px;
+.container {
+	columns: 3 180px;
 	margin: 0 auto;
-	padding: 1rem 0.5rem;
 }
-.favorites-img {
+.figure {
+	background-color: black;
+}
+.figure__img {
 	display: block;
 	margin-bottom: 1rem;
 	object-fit: cover;
 	width: 100%;
+}
+.figure__box {
+	background: #00000080;
 }

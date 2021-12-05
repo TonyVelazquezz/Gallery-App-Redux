@@ -12,7 +12,7 @@ const Header = () => {
 		dispatch(logoutAction());
 	};
 	return (
-		<header className="h-16 flex items-center justify-between shadow-md relative">
+		<header className="h-16 flex items-center shadow-md relative w-full">
 			<img
 				src={loginForm}
 				alt="login-form-img"
@@ -23,7 +23,7 @@ const Header = () => {
 				<SiPexels className="duration-300 text-main_violet text-4xl hover:text-dark_violet ease-in" />
 			</Link>
 
-			<ul className="flex items-center gap-x-4 px-5 text-white font-semibold z-10">
+			<ul className="flex flex-wrap font-semibold items-center justify-end gap-x-4 pr-6 text-white w-full z-10">
 				<li>
 					<NavLink exact to="/images" activeClassName="text-main_violet">
 						Images

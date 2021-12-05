@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
-import SingleVideo from '../SingleVideo/SingleVideo';
-import './VideoContainer.style.css';
+import SingleVideo from './SingleVideo';
+
+import '../ImageContainer/ImageContainer.style.css';
 
 const VideoContainer = ({ data }) => {
+	// console.log(data);
 	const { favData } = useSelector(store => store.profile);
 	return (
 		<>
-			<div className="container-video">
+			<div className="container">
 				{data?.map(item => (
 					<SingleVideo
 						key={item.id}

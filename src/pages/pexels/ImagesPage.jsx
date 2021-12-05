@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ImageContainer from '../../components/home/ImageContainer/ImageContainer';
 import FormSearch from '../../components/custom/FormSearch';
+import ImageContainer from '../../components/ImageContainer/ImageContainer';
 
 const ImagesPage = () => {
 	const [images, setImages] = useState('');
@@ -25,7 +25,8 @@ const ImagesPage = () => {
 		// console.log(result);
 	};
 	return (
-		<div className="m-auto px-2 sm:w-3/4 w-full">
+		<div className="px-2 pb-5 w-full">
+			<div className=""></div>
 			<FormSearch
 				handleKeyword={handleKeyword}
 				handleSearchData={handleSearchData}

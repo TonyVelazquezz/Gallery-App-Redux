@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
-import { handleAddFavDataAction } from '../../../redux/actions/profile.action';
-import './SingleVideo.style.css';
+import './imageContainer.style.css';
 
-const SingleVideo = ({ data, isFavData }) => {
+//Actions
+import { handleAddFavDataAction } from '../../redux/actions/profile.action';
+
+const SinglePhoto = ({ data, isFavData }) => {
 	//Redux hook
 	const dispatch = useDispatch();
 
@@ -14,16 +17,16 @@ const SingleVideo = ({ data, isFavData }) => {
 	};
 
 	return (
-		<div className="single-video relative">
-			<img src={data?.image} alt="video prev" className="single-video__img" />
+		<div className="figure relative">
+			<img src={data?.src.large} alt="image prev" className="figure__img" />
 
-			<div className="single-video__box absolute bg-transparent bottom-0 flex justify-between py-2 w-full">
+			<div className="figure__box absolute bg-transparent bottom-0 flex justify-between py-2 w-full">
 				<a
-					href={data?.user.url}
+					href={data?.photographer_url}
 					target="_blank"
 					className="top-2 pl-4 text-gray-200"
 				>
-					{data?.user.name}
+					{data?.photographer}
 				</a>
 
 				{!isFavData ? (
@@ -42,4 +45,8 @@ const SingleVideo = ({ data, isFavData }) => {
 	);
 };
 
-export default SingleVideo;
+SinglePhoto.propTypes = {
+	isFavData: PropTypes.bool.isRequired,
+};
+
+export default SinglePhoto;

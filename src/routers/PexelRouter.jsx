@@ -10,7 +10,7 @@ import FavoritesPage from '../pages/pexels/FavoritesPage';
 
 export const PexelRouter = () => {
 	return (
-		<div>
+		<div className="bg-gray-200 object-cover h-screen overflow-auto">
 			<Header />
 
 			<Switch>
