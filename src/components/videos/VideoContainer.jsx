@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import SingleVideo from './SingleVideo';
 
-import '../ImageContainer/ImageContainer.style.css';
+import '../ImageContainer/imageContainer.style.css';
 
 const VideoContainer = ({ data }) => {
 	// console.log(data);

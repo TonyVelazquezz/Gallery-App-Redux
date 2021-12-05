@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../pages/pexels/FavoritesPage.style.css';
-import '../ImageContainer/ImageContainer.style.css';
+import '../ImageContainer/imageContainer.style.css';
 
 const FavItem = ({ data }) => {
 	return (

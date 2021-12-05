@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 //Styles
 import SinglePhoto from './SinglePhoto';
-import './ImageContainer.style.css';
+import './imageContainer.style.css';
 
 //Components
 

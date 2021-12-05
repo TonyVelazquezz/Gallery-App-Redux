@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import FavItem from '../../components/favorites/FavItem';
-import '../../components/ImageContainer/ImageContainer.style.css';
+import '../../components/ImageContainer/imageContainer.style.css';
 
 const FavoritesPage = () => {
 	const { favData } = useSelector(store => store.profile);

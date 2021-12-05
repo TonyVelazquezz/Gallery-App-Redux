@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { AiFillHeart } from 'react-icons/ai';
 import { handleAddFavDataAction } from '../../redux/actions/profile.action';
-import '../ImageContainer/ImageContainer.style.css';
+import '../ImageContainer/imageContainer.style.css';
 
 const SingleVideo = ({ data, isFavData }) => {
 	//Redux hook
